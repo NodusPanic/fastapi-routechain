@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "fastapi-routechain"
+version = "0.1.0"
+description = "Combine multiple APIRoute subclasses for FastAPI with conflict detection"
+readme = { file = "README.md", content-type = "text/markdown" }
+authors = [{name = "kipoha", email = "kipoha.core@gmail.com"}]
+requires-python = ">=3.12"
+keywords = ["fastapi"]
+license = { text = "GPL-3.0-only" }
+classifiers = [
+    "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
+    "Framework :: FastAPI",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.12",
+]
+dependencies = [
+    "fastapi>=0.113.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=9.0.2",
+]
+ 
+[tool.pytest.ini_options]
+testpaths = ["tests"]
