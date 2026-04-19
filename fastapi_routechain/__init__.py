@@ -11,3 +11,4 @@ __all__ = [
     "RouteConflictError",
     "RouteConflictWarning",
 ]
+__version__ = "0.1.0"
