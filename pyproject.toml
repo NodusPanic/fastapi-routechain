@@ -4,7 +4,7 @@ build-backend = "hatchling.build"
 
 [project]
 name = "fastapi-routechain"
-version = "0.1.0"
+version = "0.1.1"
 description = "Combine multiple APIRoute subclasses for FastAPI with conflict detection"
 readme = { file = "README.md", content-type = "text/markdown" }
 authors = [{name = "kipoha", email = "kipoha.core@gmail.com"}]
@@ -29,3 +29,8 @@ dev = [
  
 [tool.pytest.ini_options]
 testpaths = ["tests"]
+
+[project.urls]
+Homepage = "https://github.com/NodusPanic/fastapi-routechain"
+Source = "https://github.com/NodusPanic/fastapi-routechain"
+Issues = "https://github.com/NodusPanic/fastapi-routechain/issues"
